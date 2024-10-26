@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.etn.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_monthCourses"
+        android:name="com.example.etn.ui.sixmonths.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_sixmonths" />
+
+    <fragment
+        android:id="@+id/nav_weekCourses"
+        android:name="com.example.etn.ui.sixweeks.SixWeeksFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_sixweeks" />
+    <activity
+        android:id="@+id/nav_homePart2"
+        android:name="com.example.etn.ScrollingActivity"
+        android:label="content_scrolling"
+        tools:layout="@layout/content_scrolling" />
+    <activity
+        android:id="@+id/nav_contactUs"
+        android:name="com.example.etn.ContactUS2Activity"
+        android:label="activity_contact_us2"
+        tools:layout="@layout/activity_contact_us2" />
+    <activity
+        android:id="@+id/nav_paymentPage"
+        android:name="com.example.etn.PaymentActivity"
+        android:label="activity_payment_page"
+        tools:layout="@layout/payment_activity" />
+</navigation>

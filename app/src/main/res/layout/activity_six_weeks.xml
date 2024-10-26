@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SixWeeksActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- First Course (Child Minding) -->
+
+        <!-- Second Course (Cooking) -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="310dp"
+            android:layout_height="347dp"
+            android:background="@drawable/spinner_border"
+            android:fontFamily="serif"
+            android:text="Child Minding"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleWeek"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <TextView
+            android:id="@+id/titleWeek"
+            android:layout_width="368dp"
+            android:layout_height="83dp"
+
+            android:fontFamily="serif"
+            android:text="Six-Weeks Courses"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="39dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/linkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="serif"
+            android:text="Learn more"
+            android:textColor="#53E3E6"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.267" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="307dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.165"
+            app:srcCompat="@drawable/childminding" />
+
+        <TextView
+            android:id="@+id/cookingText"
+            android:layout_width="304dp"
+            android:layout_height="312dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_border"
+            android:fontFamily="serif"
+            android:text="Cooking"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.072" />
+
+        <TextView
+            android:id="@+id/linkTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="serif"
+            android:text="Learn more"
+            android:textColor="#53E3E6"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.582" />
+
+        <TextView
+            android:id="@+id/PriceCooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="serif"
+            android:text="Fees:R750"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.236"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cookie" />
+
+        <TextView
+            android:id="@+id/PriceChildMinding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Fees:R750"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/linkTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!-- Third Course (New Course) -->
+
+        <ImageView
+            android:id="@+id/Cookie"
+            android:layout_width="298dp"
+            android:layout_height="144dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cookingText"
+            app:layout_constraintEnd_toEndOf="@+id/cookingText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cookingText"
+            app:layout_constraintTop_toTopOf="@+id/cookingText"
+            app:layout_constraintVertical_bias="0.244"
+            app:srcCompat="@drawable/cooking" />
+
+        <TextView
+            android:id="@+id/thirdCourseText"
+            android:layout_width="311dp"
+            android:layout_height="350dp"
+            android:background="@drawable/spinner_border"
+            android:fontFamily="serif"
+            android:text="Garden maintenance"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.828" />
+
+        <TextView
+            android:id="@+id/linkTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="serif"
+            android:text="Learn more"
+            android:textColor="#53E3E6"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.322"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.88" />
+
+        <TextView
+            android:id="@+id/PriceNewCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="serif"
+            android:text="Fees:R750"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/thirdCourseText"
+            app:layout_constraintHorizontal_bias="0.18"
+            app:layout_constraintStart_toStartOf="@+id/thirdCourseText"
+            app:layout_constraintTop_toBottomOf="@+id/thirdCourseImage" />
+
+        <ImageView
+            android:id="@+id/thirdCourseImage"
+            android:layout_width="246dp"
+            android:layout_height="141dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.431"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/thirdCourseText"
+            app:layout_constraintVertical_bias="0.161"
+            app:srcCompat="@drawable/garden" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

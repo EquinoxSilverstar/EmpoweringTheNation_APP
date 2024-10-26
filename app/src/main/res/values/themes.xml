@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ETN" parent="Theme.AppCompat">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">#D405E6CE</item>
+        <item name="android:button">@color/purple_700</item>
+        <item name="android:fontFamily">sans-serif</item><!-- Sets font to serif -->
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#0096D7</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/purple_500</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="MenuItemTextStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">serif</item> <!-- Sets font to serif -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Optionally set text color -->
+    </style>
+
+    <style name="Theme.ETN.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="backgroundColor">
+        <item name="android:button">@color/purple_700</item>
+    <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.ETN.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ETN.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
